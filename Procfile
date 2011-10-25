@@ -1,1 +1,1 @@
-app: bin/hubot -a campfire -n Centaur
+app: bin/hubot -a campfire -n Chavez
