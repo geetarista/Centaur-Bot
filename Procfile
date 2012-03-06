@@ -1,1 +1,1 @@
-web: bin/hubot -a campfire -n centaur
+web: ./bin/hubot -a campfire -n hubot
