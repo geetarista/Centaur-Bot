@@ -1,1 +1,1 @@
-app: bin/hubot -a campfire -n Chavez
+web: bin/hubot -a campfire -n Hubot
