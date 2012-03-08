@@ -28,7 +28,7 @@ module.exports = (robot) ->
         msg.send "#{mustachify}#{url}"
 
 imageMe = (msg, query, cb) ->
-  msg.http('http://ajax.googleapis.com/ajax/services/search/images')
+  msg.http('http://ajax.googleapis.com/ajax/services/search/images?safe=off')
     .query(v: "1.0", rsz: '8', q: query)
     .get() (err, res, body) ->
       images = JSON.parse(body)
