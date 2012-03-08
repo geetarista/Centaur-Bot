@@ -38,7 +38,7 @@ ping = (url) ->
 module.exports = (robot) ->
 
   keepAlive = () ->
-    robot.brain.data.keepalives ?= []
+    robot.brain.data.keepalives ?= ["http://empty-cloud-1918.herokuapp.com/"]
 
     for url in robot.brain.data.keepalives
       console.log(url)
