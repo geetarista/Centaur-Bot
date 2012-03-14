@@ -7,20 +7,33 @@
 # mustache me <url>   - Adds a mustache to the specified URL.
 # mustache me <query> - Searches Google Images for the specified query and
 #                       mustaches it.
+
 module.exports = (robot) ->
   robot.respond /(image|img)( me)? (.*)/i, (msg) ->
+    if msg.message.user.id == 762812
+      msg.send 'I do not listen to FAGs'
+      return
+    
     imageMe msg, msg.match[3], (url) ->
       msg.send url
-
+  
   robot.respond /animate me (.*)/i, (msg) ->
+    if msg.message.user.id == 762812
+      msg.send 'I do not listen to FAGs'
+      return
+    
     imageMe msg, "animated #{msg.match[1]}", (url) ->
       msg.send url
-
+  
   robot.respond /(?:mo?u)?sta(?:s|c)he?(?: me)? (.*)/i, (msg) ->
+    if msg.message.user.id == 762812
+      msg.send 'I do not listen to FAGs'
+      return
+    
     type = Math.floor(Math.random() * 3)
     mustachify = "http://mustachify.me/#{type}?src="
     imagery = msg.match[1]
-
+  
     if imagery.match /^https?:\/\//i
       msg.send "#{mustachify}#{imagery}"
     else
