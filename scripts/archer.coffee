@@ -16,7 +16,7 @@
 Select     = require("soupselect").select
 HtmlParser = require "htmlparser"
 JsDom      = require "jsdom"
-_          = require("underscore")
+_und       = require("underscore")
 
 module.exports = (robot) ->
 
@@ -42,7 +42,7 @@ module.exports = (robot) ->
 
 get_quote = (msg, quotes) ->
 
-  nodeChildren = _.flatten childern_of_type(quotes[Math.floor(Math.random() * quotes.length)])
+  nodeChildren = _und.flatten childern_of_type(quotes[Math.floor(Math.random() * quotes.length)])
   quote = (textNode.data for textNode in nodeChildren).join(' ').replace(/^\s+|\s+$/g, '')
 
   msg.send quote
