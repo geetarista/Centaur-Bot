@@ -11,7 +11,7 @@
 module.exports = (robot) ->
   robot.respond /(image|img)( me)? (.*)/i, (msg) ->
     if msg.message.user.id == 762812
-      msg.send 'I do not listen to FAGs'
+      msg.respond 'Fuck off'
       return
     
     imageMe msg, msg.match[3], (url) ->
@@ -19,7 +19,7 @@ module.exports = (robot) ->
   
   robot.respond /animate me (.*)/i, (msg) ->
     if msg.message.user.id == 762812
-      msg.send 'I do not listen to FAGs'
+      msg.respond 'Fuck off'
       return
     
     imageMe msg, "animated #{msg.match[1]}", (url) ->
@@ -27,7 +27,7 @@ module.exports = (robot) ->
   
   robot.respond /(?:mo?u)?sta(?:s|c)he?(?: me)? (.*)/i, (msg) ->
     if msg.message.user.id == 762812
-      msg.send 'I do not listen to FAGs'
+      msg.respond 'Fuck off'
       return
     
     type = Math.floor(Math.random() * 3)
