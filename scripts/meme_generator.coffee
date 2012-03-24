@@ -112,7 +112,7 @@ module.exports = (robot) ->
     memeGenerator msg, 354251, 2094971, 'HEY GIRL', msg.match[1], (url) ->
       msg.send url
 
-  robot.respond /(.*)fap(.*)/i, (msg) ->
+  robot.respond /(.*)\s?fap\s?(.*)/i, (msg) ->
     if msg.message.user.id == 762812
       msg.respond 'Fuck off'
       return
