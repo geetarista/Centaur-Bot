@@ -20,7 +20,8 @@
     "optparse": "1.0.3",
     "soupselect" : "*",
     "htmlparser": "*",
-    "jsdom": "*"
+    "jsdom": "*",
+    "underscore": "*"
   }
 }
 
