@@ -117,7 +117,7 @@ module.exports = (robot) ->
       msg.respond 'Fuck off'
       return
 
-    memeGenerator msg, 16379, 1146483, msg.match[1].toUpperCase(), msg.match[2].toUpperCase(), (url) ->
+    memeGenerator msg, 16379, 1146483, msg.match[1], msg.match[2], (url) ->
       msg.send url
 
 memeGenerator = (msg, generatorID, imageID, text0, text1, callback) ->
