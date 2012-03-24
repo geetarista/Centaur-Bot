@@ -112,6 +112,14 @@ module.exports = (robot) ->
     memeGenerator msg, 354251, 2094971, 'HEY GIRL', msg.match[1], (url) ->
       msg.send url
 
+  robot.respond /(.*) fap (.*)/i, (msg) ->
+    if msg.message.user.id == 762812
+      msg.respond 'Fuck off'
+      return
+
+    memeGenerator msg, 16379, 1146483, msg.match[1].toUpperCase(), msg.match[2].toUpperCase(), (url) ->
+      msg.send url
+
 memeGenerator = (msg, generatorID, imageID, text0, text1, callback) ->
   username = process.env.HUBOT_MEMEGEN_USERNAME
   password = process.env.HUBOT_MEMEGEN_PASSWORD
