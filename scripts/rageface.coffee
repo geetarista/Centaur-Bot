@@ -33,4 +33,4 @@ rageFacesCall = (msg, tag, cb) ->
     .get() (err, res, body) ->
       json_body = JSON.parse(body)
       items = json_body.items.shuffle()
-      cb if items.length > 1 then items[0].face_url else "Unable to rage"
+      cb if items.length >= 1 then items[0].face_url else "Unable to rage"
