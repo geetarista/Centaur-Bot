@@ -8,10 +8,7 @@
 # get archer
 
 # REQUIRED MODULES
-# sudo npm install htmlparser
-# sudo npm install soupselect
-# sudo npm install jsdom
-# sudo npm install underscore
+# npm install scraper
 
 scraper = require 'scraper'
 
