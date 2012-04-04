@@ -21,7 +21,8 @@
     "soupselect" : "*",
     "htmlparser": "*",
     "jsdom": "*",
-    "underscore": "*"
+    "underscore": "*",
+    "scraper": "*"
   }
 }
 
