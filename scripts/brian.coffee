@@ -14,5 +14,5 @@ messages = [
 module.exports = (robot) ->
   robot.respond /(.*)/i, (msg) ->
     if msg.message.user.id == 762812
-      msg.send msg.random images
+      msg.send msg.random messages
       return
