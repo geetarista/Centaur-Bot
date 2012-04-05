@@ -12,7 +12,7 @@ messages = [
 ]
 
 module.exports = (robot) ->
-  robot.respond /(.*)/i, (msg) ->
+  robot.hear /(.*)/i, (msg) ->
     if msg.message.user.id == 762812
       msg.send msg.random messages
       return
