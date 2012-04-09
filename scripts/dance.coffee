@@ -19,6 +19,7 @@ dances= [
   "http://assets0.ordienetworks.com/images/GifGuide/dancing/boratgroupdance5is.gif",
   "http://assets0.ordienetworks.com/images/GifGuide/dancing/gary.gif",
   "http://assets0.ordienetworks.com/images/GifGuide/dancing/smith3.gif",
+  "http://www.mattaebersold.net/gifs/gifs/2.gif",
   "http://assets0.ordienetworks.com/images/GifGuide/dancing/sunny2.gif",
   "http://assets0.ordienetworks.com/images/GifGuide/dancing/sunny1.gif",
   "http://assets0.ordienetworks.com/images/GifGuide/dancing/sunny2a.gif",
